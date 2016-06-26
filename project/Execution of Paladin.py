@@ -25,11 +25,11 @@ for i in range(1,int(l[0])+1):
         f.seek(0)
         if f.readlines()[b:c][j].strip('\n')=='Old Murk-Eye':
             Old_murk_eye_number+=1
-        f.seek(0)
-        if f.readlines()[b:c][j].strip('\n')=='Muloc Warleader':
+
+        elif f.readlines()[b:c][j].strip('\n')=='Muloc Warleader':
             Muloc_Warleader_number+=1
-        f.seek(0)
-        if f.readlines()[b:c][j].strip('\n')=='Bluegill Warrior':
+
+        elif f.readlines()[b:c][j].strip('\n')=='Bluegill Warrior':
             Bluegill_Warrior_number+=1
 
 #    print Old_murk_eye_number,Muloc_Warleader_number,Bluegill_Warrior_number
