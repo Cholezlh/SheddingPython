@@ -18,12 +18,14 @@
 
 # Your program here.
 
-f= open('ffmpeg.c','r')
+f= open('listing.py','r')
 w= open('test2.py','w')
 i=1
+
 for line in f:
 
-    w.write(str(i)+line)
+    w.write(format(str(i),'^6')+line)
+
 
     i+=1
 f.close()
